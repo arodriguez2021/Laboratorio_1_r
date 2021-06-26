@@ -71,5 +71,17 @@ students_projection <- function(){
 }
 students_projection()
 
+#6.2
+students_projection <- function(){
+  for (row in 1:nrow(result_students)){
+  for (col in 1:ncol(result_students)-1){
+    if (result_students[row,col] <= 45){
+       print('Student at risk')
+    }
+  }
+}
+}
+students_projection()
+
 ```
 
